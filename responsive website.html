@@ -1,0 +1,133 @@
+DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans">
+
+    <header class="header bg-blue-500 text-white p-4">
+        <a href="#" class="logo text-xl font-bold">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header
+
+    <section class="home bg-gray-100 p-8" id="home">
+        <div class="home-container">
+            <h3>Hello, It's Me</h3>
+            <h1 class="text-4xl font-bold text-blue-700">Umer riaz</h1>
+            <h3>And I am a <span class="typing-text"><span class="color-changing-text">AI developer</span></span></h3>
+            <p class="mt-4">I am eager to learn and adapt to new technologies and methodologies. <br> and I will do my best to
+                meet your expectations and deliver quality work.<br></p>
+            <div class="Social-media">
+                <a href="https://wa.me/03113841096"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/nihal-ghori-286100266/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/Nihalghori"><i class='bx bxl-github'></i></a>
+            </div>
+           
+        </div>
+      
+    </section>
+
+    <section class="about bg-white p-8" id="about">
+        <div class="about-img">
+            
+
+        </div>
+        <div class="about-container">
+            <h2 class="heading text-3xl font-bold">ABOUT <span>Me</span></h2>
+            <h3 class="text-xl font-semibold">frontend Developer</h3>
+            <p>My name is Umer riaz, and I am an AI developer. I am a fresher, I have a strong passion for
+                programming and technology. I am eager to learn and adapt to new technologies and methodologies. and I
+                will do my best to meet your expectations and deliver quality work. </p>
+        </div>
+    </section>
+
+    <section class="services bg-gray-100 p-8" id="services">
+        <h2 class="heading text-3xl font-bold">Our <span>Services</span></h2>
+        <div class="services-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="services-box p-4 bg-white rounded-md shadow-md">
+                <i class='bx bx-code-block'></i>
+                <H3 class="text-lg font-semibold">HTML,CSS,javascript</H3>
+                <p>Transform your vision into reality with our creative website design services. We specialize in
+                    crafting visually appealing, responsive, and user-centric websites that leave a lasting
+                    impression.</p>
+            </div>
+
+            <div class="services-box p-4 bg-white rounded-md shadow-md">
+                <i class='bx bxl-nodejs'></i>
+                <H3 class="text-lg font-semibold">REACT.JS</H3>
+                <p>Build scalable and efficient APIs to connect your applications to the backend. Our API development
+                    ensures seamless data exchange and integration. Streamline data flow across systems. We integrate
+                    your backend with third-party services, APIs, and data sources for seamless operations.</p>
+            </div>
+
+            <div class="services-box p-4 bg-white rounded-md shadow-md">
+                <i class='bx bxl-react'></i>
+                <H3 class="text-lg font-semibold"> Boostrap Developer</H3>
+                <p>Transform your ideas into interactive and dynamic web applications with React. We specialize in
+                    building feature-rich, user-friendly interfaces using the latest React.js technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio bg-white p-8" id="portfolio">
+        <h2 class="heading text-3xl font-bold">latest <span>Project</span></h2>
+        <div class="portfolio-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="portfolio-box relative">
+                <img src="download.jpeg" class="w-full h-38 object-cover"
+                    alt="Weather App">
+                <div class="portfolio-layer absolute inset-0 flex flex-col items-center justify-center opacity-0
+                            hover:opacity-100 transition duration-300">
+                    <h4 class="text-xl font-semibold">Weather App</h4>
+                    <p class="text-sm">This is a weather app using HTML, CSS, and JavaScript.</p>
+                    <a href="https://nihalghori.github.io/weather-app/"
+                        class="text-blue-500 hover:text-blue-700"><i class='bx bx-link'></i></a>
+                </div>
+           
+            </div>
+            <!-- Repeat similar structure for other projects -->
+        </div>
+    </section>
+
+    <section class="contact bg-gray-100 p-8" id="contact">
+        <h2 class="heading text-3xl font-bold">Contact <span>Me</span></h2>
+        <form id="contactForm">
+            <div class="input-box flex flex-wrap -mx-4 mb-4">
+                <input type="text" id="fullName" placeholder="Full Name"
+                    class="w-full sm:w-1/2 px-4 py-2 mb-4 sm:mb-0" required>
+                <input type="email" id="email" placeholder="Email Address" class="w-full sm:w-1/2 px-4 py-2" required>
+            </div>
+            <div class="input-box flex flex-wrap -mx-4 mb-4">
+                <input type="number" id="mobileNumber" placeholder="Enter your Mobile Number"
+                    class="w-full sm:w-1/2 px-4 py-2 mb-4 sm:mb-0" required>
+                <input type="text" id="emailSubject" placeholder="Email subject" class="w-full sm:w-1/2 px-4 py-2"
+                    required>
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Enter your Message"
+                class="w-full px-4 py-2 mb-4"></textarea>
+            <input type="submit" value="Send Message" class="btn bg-blue-500 text-white py-2 px-4">
+        </form>
+    </section>
+
+    <footer class="footer bg-blue-500 text-white p-4">
+        <div class="foot-text">
+            <p>Regrads by Umer Riaz</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
